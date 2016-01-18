@@ -1,0 +1,61 @@
+
+<!doctype html> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="Copyright" content="车行宝">
+<meta name="Description" content="车行宝" />
+<meta name="Author" content="Egooidea" />
+<meta name="Keywords" content="车行宝" />
+<title>车行宝</title> 
+<link rel="stylesheet" type="text/css" href="css/comm.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<div class="wrap" data-nav="download">
+<div class="header">
+	<div class="hd-inner clearfix">
+		<div class="hd clearfix">
+			<a href="index.shtml" class="logo"></a>
+			<a href="javascript:;" onclick="var nav = document.querySelector('.nav'); if(nav.classList.contains('open')){nav.classList.remove('open');this.classList.remove('open');}else{nav.classList.add('open');this.classList.add('open');}" class="nav-toggle-btn"><i></i></a>
+		</div>
+		<ul class="nav">
+			<li><a data-nav="index" href="index.shtml">首页</a></li>
+			<li><a data-nav="butie" href="butie.shtml">油卡补贴</a></li>
+			<li><a data-nav="fanxian" href="fanxian.shtml">购险奖励</a></li>
+			<li><a data-nav="cxb" href="cxb.shtml">车行宝</a></li>
+			<li><a data-nav="events" href="events.shtml">活动</a></li>
+			<li><a data-nav="download" href="download.shtml">APP下载</a></li>
+			<li><a data-nav="faq" href="faq.shtml">帮助中心</a></li>
+		</ul>
+	</div>
+</div>
+<div class="content download-content">
+	<div class="c1000">
+		<p class="qrcode"></p>
+		<!--<a href="itms-services://?action=download-manifest&url=https://www.kcnzq.com/down/happyearn.plist" target="_blank" title="iPhone 下载" class="download-btn iOS-btn"><i></i>iPhone 下载</a>-->
+        <a href="https://itunes.apple.com/cn/app/kai-che-neng-zhuan-qian/id908188658?l=en&mt=8" target="_blank" title="iPhone 下载" class="download-btn iOS-btn"><i></i>iPhone 下载</a>
+		<a href="http://www.kcnzq.com/down/happyearn.apk" target="_blank" title="Android 下载" class="download-btn android-btn"><i></i>Android 下载</a>
+		<p class="download-txt">扫二维码下载APP<br>即刻开始赚钱</p>
+	</div>
+	<div class="btm">安装车行宝，守护爱车的同时，自动帮您赚钱，不放过每一分钱！<a href="https://detail.tmall.com/item.htm?spm=a220m.1000862.1000725.1.Mrvrj8&id=43215361585&is_b=1&cat_id=2&rn=1e7d2c301ff35c24e6ede70e5dc0fdf0&skuId=75321757839" target="_blank" title="了解购买">了&nbsp;&nbsp;解&nbsp;&nbsp;购&nbsp;&nbsp;买</a></div>
+</div>
+<script type="text/javascript">
+$(function(){
+	var navData = $('.wrap').attr('data-nav');
+	$('.header .nav a[data-nav='+navData+']').addClass('active');
+})
+</script>
+<div class="footer">
+	<div class="footer-inner">
+		<p class="links"><a href="index.shtml">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="about.shtml">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="faq.shtml">帮助中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:;" class="qrcode_wx">官网微信<span><img src="images/qrcode_wx.jpg" width="200" height="200">扫一扫，关注微信</span></a></p>
+		<p class="cont"><i></i>400-102-0601<span>周一至周日 8:30-20:00</span></p>
+		<p class="copyright">Copyright &copy; 2012-2015, All Rights Reserved.<span class="ch"></span>深圳市成为智能交通系统有限公司 粤ICP备11046807号</p>
+	</div>
+</div>
+</div>
+</body>
+</html>
